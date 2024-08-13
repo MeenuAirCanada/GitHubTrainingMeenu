@@ -1,0 +1,7 @@
+name: A workflow for my Hello world File
+on: push
+jobs: 
+ echo-print:
+  runs-on: ubuntu-latest
+  steps: 
+   - run: echo "Run the first workflow"
