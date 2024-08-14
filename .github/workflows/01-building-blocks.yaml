@@ -1,6 +1,11 @@
 name: A workflow for my Hello world File
+
+run-name: ${{ GitHub.actor }} is learning GitHub Actions
+
 on: push
+
 jobs: 
  echo-hello:
   runs-on: ubuntu-latest
-  steps: echo "Hello, World!"
+  steps: 
+    - run: echo "Hello, World!"
